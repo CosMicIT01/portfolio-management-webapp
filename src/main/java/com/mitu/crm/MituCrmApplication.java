@@ -1,20 +1,20 @@
 package com.mitu.crm;
 
-import java.util.Arrays;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
 @EnableAutoConfiguration
-public class MituCrmApplication {
+public class MituCrmApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(MituCrmApplication.class, args);
 
-        System.out.println("Let's inspect the beans provided by Spring Boot:");
+//        System.out.println("Let's inspect the beans provided by Spring Boot:");
 
 //        String[] beanNames = ctx.getBeanDefinitionNames();
 //        Arrays.sort(beanNames);
@@ -22,5 +22,10 @@ public class MituCrmApplication {
 //            System.out.println(beanName);
 //        }
 
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(MituCrmApplication.class);
     }
 }
