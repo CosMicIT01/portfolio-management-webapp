@@ -1,9 +1,9 @@
 import React from "react";
 
 
-export default class Customers extends React.Component {
+export default class Notifications extends React.Component {
   render() {
-    console.log("in Customers component");
+    console.log("in Notifications component");
     const { query } = this.props.location;
     const { params } = this.props;
     const { date, filter } = query;
@@ -13,7 +13,7 @@ export default class Customers extends React.Component {
         <div class="row">
           <div class="col-lg-12">
             <div class="well text-center">
-              This is the Customer Page
+              This is the Notifications Page
             </div>
           </div>
         </div>

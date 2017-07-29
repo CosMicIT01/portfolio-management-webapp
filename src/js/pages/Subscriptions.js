@@ -1,15 +1,15 @@
 import React from "react";
 
-export default class Agents extends React.Component {
+export default class Subscriptions extends React.Component {
   render() {
 
-   console.log("in Agents Page");
+   console.log("in Subscriptions Page");
     return (
       <div>
         <div class="row">
           <div class="col-lg-12">
             <div class="well text-center">
-              This is the Agent Page
+              This is the Subscriptions Page
             </div>
           </div>
         </div>

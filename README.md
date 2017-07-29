@@ -33,8 +33,8 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 $ cd portfolio-management-webapp
-$ npm install 
-$ node run dev
+$ npm install
+$ npm run dev
 ```
 
 ### Todos
@@ -43,6 +43,6 @@ $ node run dev
 
 License
 ----
-ISC
+MIT
 
 &copy; CosMicIT GmbH 2017

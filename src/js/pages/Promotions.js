@@ -1,18 +1,20 @@
 import React from "react";
 
-
-export default class Footer extends React.Component {
+export default class Promotions extends React.Component {
   render() {
+    console.log("Promotions");
     return (
-      <footer>
+      <div>
         <div class="row">
           <div class="col-lg-12">
             <div class="well text-center">
-              <p>Copyright &copy; CosMicIT.gmbh</p>
+              This is the Promotions Page
             </div>
           </div>
         </div>
-      </footer>
+
+        <div class="row">The Content Goes Here</div>
+      </div>
     );
   }
 }

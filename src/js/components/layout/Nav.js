@@ -17,9 +17,10 @@ export default class Nav extends React.Component {
   render() {
     const { location } = this.props;
     const { collapsed } = this.state;
-    const agentsClass = location.pathname === "/" ? "active" : "";
-    const customersClass = location.pathname.match(/^\/customers/) ? "active" : "";
-    const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
+    const loginClass = location.pathname === "/" ? "active" : "";
+    const subscriptionsClass = location.pathname.match(/^\/subscriptions/) ? "active" : "";
+    const notificationsClass = location.pathname.match(/^\/notifications/) ? "active" : "";
+    const promotionsClass = location.pathname.match(/^\/promotions/) ? "active" : "";
     const navClass = collapsed ? "collapse" : "";
 
     return (
@@ -31,18 +32,22 @@ export default class Nav extends React.Component {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
           </div>
           <div class={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class={agentsClass}>
-                <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Agents</IndexLink>
+              <li class={loginClass}>
+                <IndexLink to="/" onClick={this.toggleCollapse.bind(this)}>Login</IndexLink>
               </li>
-              <li class={customersClass}>
-                <Link to="customers" onClick={this.toggleCollapse.bind(this)}>Customers</Link>
+              <li class={subscriptionsClass}>
+                <Link to="subscriptions" onClick={this.toggleCollapse.bind(this)}>Subscriptions</Link>
               </li>
-              <li class={settingsClass}>
-                <Link to="settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link>
+              <li class={notificationsClass}>
+                <Link to="notifications" onClick={this.toggleCollapse.bind(this)}>Notifications</Link>
+              </li>
+              <li class={promotionsClass}>
+                <Link to="promotions" onClick={this.toggleCollapse.bind(this)}>Promotions</Link>
               </li>
             </ul>
           </div>
