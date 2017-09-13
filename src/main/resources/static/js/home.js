@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     $("#dashboardLink").click(function(){
     alert('dashboard Clicked');
+    $('#mainContent').load('http://localhost:8090/agent/dashboard');
     });
 
     $("#notificationLink").click(function(){
@@ -12,7 +13,7 @@ $(document).ready(function(){
         alert('profile link Clicked');
     });
     $("#viewSubscriptionsLink").click(function(){
-        $('#mainContent').load('http://localhost:8090/agent/managedSubscriptions');;
+        $('#mainContent').load('http://localhost:8090/agent/managedSubscriptions');
     });
     $("#viewServiceRequestsLink").click(function(){
     alert('serviceRequests Clicked');

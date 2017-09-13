@@ -22,6 +22,9 @@
 </head>
 <body>
 <div class="row">
+  <table>
+    <tr>
+      <td>
   <div class="col-sm-4">
     <div class="nav-side-menu">
         <div class="brand">Brand Logo</div>
@@ -86,14 +89,15 @@
          </div>
     </div>
   </div>
+        </td>
+        <td>
   <div class="col-sm-8">
-      <div class="container">
-        <div class="row">
-            <div id="mainContent">
-            </div>
-        </div>
-      </div>
+    <div id="mainContent">
+    </div>
   </div>
+        </td>
+    </tr>
+    </table>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
